@@ -1,109 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Neon Glow Tattoo</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #000; /* black background */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: 'Orbitron', sans-serif;
-    color: #fff;
-  }
-
-  h1 {
-    font-size: 3.5rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    color: cyan;
-    text-shadow:
-      0 0 5px cyan,
-      0 0 10px cyan,
-      0 0 20px magenta,
-      0 0 30px magenta,
-      0 0 40px yellow,
-      0 0 70px yellow;
-  }
-
-  .tattoo-container {
-    background: #111;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow:
-      0 0 10px cyan,
-      0 0 20px magenta,
-      0 0 30px yellow;
-    max-width: 400px;
-    text-align: center;
-  }
-
-  .tattoo-image {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow:
-      0 0 15px cyan,
-      0 0 25px magenta,
-      0 0 35px yellow;
-    margin-bottom: 1.5rem;
-  }
-
-  button {
-    background-color: black;
-    border: 2px solid cyan;
-    color: cyan;
-    font-size: 1.25rem;
-    font-weight: bold;
-    padding: 0.75rem 2rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-shadow:
-      0 0 5px cyan,
-      0 0 10px magenta,
-      0 0 15px yellow;
-    box-shadow:
-      0 0 10px cyan,
-      0 0 20px magenta,
-      0 0 30px yellow;
-  }
-
-  button:hover {
-    color: #000;
-    background-color: cyan;
-    border-color: magenta;
-    box-shadow:
-      0 0 20px magenta,
-      0 0 40px yellow,
-      0 0 60px cyan;
-    text-shadow: none;
-  }
-</style>
+    <meta charset="UTF-8">
+    <title>Neon Glow Tattoo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <h1 class="neon-text">Neon Glow Tattoo</h1>
+        
+        <div class="tattoo-wrapper">
+            <!-- Replace the src with your actual tattoo image URL -->
+            <img src="tattoo.png" alt="Tattoo Design" class="tattoo-image">
+        </div>
 
-  <h1>Neon Glow Tattoo</h1>
-
-  <div class="tattoo-container">
-    <!-- Placeholder tattoo image - replace the src with your tattoo image URL -->
-    <img
-      src="https://i.imgur.com/O3Z1Q0F.png"
-      alt="Neon Tattoo"
-      class="tattoo-image"
-    />
-    <br />
-    <a href="https://i.imgur.com/O3Z1Q0F.png" download="neon_tattoo.png">
-      <button>Download Tattoo</button>
-    </a>
-  </div>
-
+        <a href="tattoo.png" download class="download-btn">Download Tattoo</a>
+    </div>
 </body>
 </html>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background-color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    color: white;
+}
+
+/* Neon Glow Title */
+.neon-text {
+    font-size: 3em;
+    color: cyan;
+    text-shadow:
+        0 0 5px cyan,
+        0 0 10px magenta,
+        0 0 20px yellow,
+        0 0 40px cyan;
+    margin-bottom: 30px;
+}
+
+/* Tattoo Image */
+.tattoo-wrapper {
+    margin-bottom: 30px;
+}
+
+.tattoo-image {
+    width: 300px;
+    max-width: 90%;
+    filter: drop-shadow(0 0 15px magenta);
+    border: 2px solid cyan;
+    border-radius: 10px;
+}
+
+/* Download Button */
+.download-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    color: black;
+    background: linear-gradient(45deg, cyan, magenta, yellow);
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px magenta, 0 0 20px cyan;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background: linear-gradient(45deg, yellow, magenta, cyan);
+    box-shadow: 0 0 20px yellow, 0 0 40px magenta;
+    transform: scale(1.05);
+}
+
+
