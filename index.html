@@ -1,78 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Neon Glow Tattoo</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #000;
-      font-family: 'Arial', sans-serif;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-      text-align: center;
-      color: cyan;
-      text-shadow:
-        0 0 5px cyan,
-        0 0 10px cyan,
-        0 0 20px magenta,
-        0 0 30px yellow;
-    }
-
-    .tattoo-image {
-      width: 300px;
-      height: auto;
-      margin-bottom: 30px;
-      border: 2px solid cyan;
-      box-shadow:
-        0 0 10px cyan,
-        0 0 20px magenta,
-        0 0 30px yellow;
-    }
-
-    .download-btn {
-      padding: 15px 30px;
-      font-size: 1.2em;
-      color: black;
-      background: linear-gradient(45deg, cyan, magenta, yellow);
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow:
-        0 0 5px cyan,
-        0 0 10px magenta,
-        0 0 15px yellow;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .download-btn:hover {
-      transform: scale(1.05);
-      box-shadow:
-        0 0 10px cyan,
-        0 0 20px magenta,
-        0 0 30px yellow,
-        0 0 40px cyan;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alicia Ink - Estudio de Tatuajes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Neon Glow Tattoo</h1>
-  <img src="tattoo.png" alt="Tattoo Design" class="tattoo-image" />
-  <a href="tattoo.png" download="tattoo.png" class="download-btn">Download Tattoo</a>
+
+  <header class="hero">
+    <div class="overlay"></div>
+    <nav>
+      <img src="images/logo.png" alt="Logo Alicia Ink" class="logo">
+      <ul>
+        <li><a href="#estudio">Estudio</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#artistas">Artistas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="hero-text">
+      <h1>Alicia Ink</h1>
+      <p>"Donde lo imposible se convierte en arte"</p>
+    </div>
+  </header>
+
+  <section id="estudio" class="section">
+    <h2>Bienvenido a Nuestro Mundo</h2>
+    <p>
+      Inspirado en la magia, la locura y los sueños de *Alicia en el País de las Maravillas*, nuestro estudio mezcla fantasía y tinta para crear tatuajes únicos que cuentan historias. 
+    </p>
+  </section>
+
+  <section id="galeria" class="section gallery">
+    <h2>Galería de Tatuajes</h2>
+    <div class="gallery-grid">
+      <img src="images/tatuaje1.jpg" alt="Tatuaje de Alicia">
+      <img src="images/tatuaje2.jpg" alt="Tatuaje del Sombrerero">
+      <img src="images/tatuaje3.jpg" alt="Tatuaje del Gato Cheshire">
+    </div>
+  </section>
+
+  <section id="artistas" class="section">
+    <h2>Artistas</h2>
+    <p>
+      Conoce a nuestros tatuadores expertos en estilo surrealista, neo-tradicional y blackwork, todos influenciados por el mundo de Lewis Carroll.
+    </p>
+  </section>
+
+  <section id="contacto" class="section contact">
+    <h2>Contacto</h2>
+    <p>Agenda tu cita a través de nuestras redes o escríbenos a <strong>hola@aliciaink.com</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Alicia Ink. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
-
